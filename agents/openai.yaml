@@ -1,0 +1,4 @@
+interface:
+  display_name: "TrainDTO JSON"
+  short_description: "Generate strict TrainDTO JSON output"
+  default_prompt: "Use $train-dto-json to generate valid TrainDTO JSON for this train product."
