@@ -82,3 +82,7 @@ Use $train-dto-json to generate valid TrainDTO JSON for Marklin Mini-Club 8892.
 ```text
 Use $train-dto-json to create TrainDTO JSON for Walthers 920-42539 and return one DTO per included train item.
 ```
+
+## License
+
+MIT. See `LICENSE`.
