@@ -39,14 +39,30 @@ mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 ln -s "/Users/josephbeaudoin/Developer/train-dto-json" "${CODEX_HOME:-$HOME/.codex}/skills/train-dto-json"
 ```
 
-### Option 2: Copy the repository into the skills directory
+### Option 2: Install from GitHub with npx
+
+You can install this skill with `npx` using the public GitHub repository:
+
+```bash
+npx skills add https://github.com/jmcsmith/train-dto-json --skill train-dto-json
+```
+
+When using `npx`, select Codex during installation, then choose whether the skill should be installed for the current project or globally for all projects.
+
+If you get `npx: command not found`, install Node first:
+
+```bash
+brew install node
+```
+
+### Option 3: Copy the repository into the skills directory
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 cp -R "/Users/josephbeaudoin/Developer/train-dto-json" "${CODEX_HOME:-$HOME/.codex}/skills/train-dto-json"
 ```
 
-### Option 3: Clone into the skills directory
+### Option 4: Clone into the skills directory
 
 If you publish this repository to GitHub or another Git remote, clone it directly into the skills directory using the skill name as the target folder:
 
